@@ -1,0 +1,432 @@
+body {
+  background-image: url(./recursos/Fondo.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+#titulo {
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 2.5em;
+  margin: 1em;
+}
+
+#pokedex {
+  display: flex;
+  width: 50%;
+  height: 32em;
+  translate: 50%;
+  align-items: flex-end;
+}
+
+#left {
+  display: flex;
+  position: relative;
+  background-color: #cb3234;
+  width: 50%;
+  height: 32em;
+  border-width: 3px 0 3px 3px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 5% 0 0 20%;
+  box-shadow: inset 0 0 3px 3px #0000004d;
+}
+
+#big-light {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:radial-gradient(farthest-corner at 10px 10px, white, #369CD4, #369CD4);
+  width: 3.8em;
+  height: 3.8em;
+  border-radius: 50%;
+  margin: 10px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+  box-shadow: inset 0 0 3px 3px #0000004d;
+}
+
+#small-lights {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  height: 1em;
+  width: 5em;
+  margin-top: 0.7em;
+}
+
+#red-light {
+  background: radial-gradient(farthest-corner at 5px 5px, white, #ff0000, #ff0000);
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  box-shadow: inset 0 0 3px 3px #0000004d;
+}
+
+#yellow-light {
+  background: radial-gradient(farthest-corner at 5px 5px, white, #fbff00, #fbff00);
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  box-shadow: inset 0 0 3px 3px #0000004d;
+}
+
+#green-light {
+  background:radial-gradient(farthest-corner at 5px 5px, white, #00ff15, #00ff15);
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  box-shadow: inset 0 0 3px 3px #0000004d;
+}
+
+#poke-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 80%;
+  height: 50%;
+  background-color: white;
+  border: 3px solid black;
+  align-self: center;
+  margin-bottom: 3.5em;
+  margin-left: 1.5em;
+  border-radius: 5% 5% 5% 25%;
+  box-shadow: inset 0 0 3px 3px #0000004d;
+}
+
+.ps-topdots {
+  position: relative;
+  align-self: flex-start;
+  background-color: red;
+  width: .2em;
+  height: .2em;
+  border-radius: 50%;
+  margin: .3em 1em;
+  border: 3px solid black;
+}
+
+#ps-reddot {
+  position: absolute;
+  align-self: flex-end;
+  background-color: red;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  border: 3px solid black;
+  margin: 0 10em .5em 0;
+  box-shadow: inset 0 0 3px 3px #0000004d;
+}
+
+#ps-lines {
+  position: absolute;
+  align-self: flex-end;
+  width: 2em;
+  height: 5px;
+  border-top: 10px;
+  border-bottom: 10px;
+  border-left: 0;
+  border-right: 0;
+  border-style: double;
+  border-color: black;
+  margin: 0 0 .5em 10em;
+}
+
+#ps-black {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: #393d42;
+  width: 80%;
+  height: 70%;
+  margin-bottom: 10%;
+  border-radius: 5%;
+  box-shadow: inset 0 0 3px 3px #0000004d;
+}
+
+#namPok{
+  align-self: flex-start;
+  font-family: 'Press Start 2P', cursive;
+  color: white;
+  margin-top: 0.5em;
+}
+
+#pokeImg {
+  position: absolute;
+  width: 65%;
+}
+
+#numPok {
+  position: absolute;
+  align-self: flex-end;
+  font-family: 'Press Start 2P', cursive;
+  color: white;
+  margin-bottom: 0.5em;
+  font-size: small;
+}
+
+#left-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  align-self: flex-end;
+  width: 6em;
+  height: 6em;
+  margin: 0 0 2em 2em;
+}
+
+#vertical {
+  position: absolute;
+  background-color: #0f0f0f;
+  height: 100%;
+  width: 33%;
+}
+
+#horizontal {
+  position: absolute;
+  background-color: #0f0f0f;
+  height: 33%;
+  width: 100%;
+}
+
+#speaker {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  align-self: flex-end;
+  width: 7em;
+  height: 7em;
+  border-radius: 50%;
+  margin: 0 0 1.5em 10em;
+}
+
+.speaklines {
+  position: relative;
+  background-color: #0f0f0f;
+  height: 1em;
+}
+
+#s1 {
+  width: 40%;
+  align-self: center;
+  margin: 0 0 .2em 0;
+  border-radius: 50%;
+}
+
+#s2 {
+  width: 80%;
+  align-self: center;
+  margin: 0 0 .2em 0;
+  border-radius: 50%;
+}
+
+#s3 {
+  width: 95%;
+  align-self: center;
+  margin: 0 0 .2em 0;
+  border-radius: 50%;
+}
+
+#s4 {
+  width: 100%;
+  align-self: center;
+  margin: 0 0 .2em 0;
+  border-radius: 50%;
+}
+
+#s5 {
+  width: 95%;
+  align-self: center;
+  margin: 0 0 .2em 0;
+  border-radius: 50%;
+}
+
+#s6 {
+  width: 80%;
+  align-self: center;
+  margin: 0 0 .2em 0;
+  border-radius: 50%;
+}
+
+#s7 {
+  width: 40%;
+  align-self: center;
+  margin: 0;
+  border-radius: 50%;
+}
+
+#center {
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  width: 5%;
+  height: 32em;
+  border-width: 3px;
+  border-style: solid;
+  border-color: black;
+  background: linear-gradient(to right, #7F100F, #E71D23, #cb3234, #7F100F);
+  border-radius: 0 20% 20% 0;
+}
+
+#cent {
+  position: relative;
+  width: 100%;
+  height: 15em;
+  margin-bottom: 6em;
+  border-width: 6px 0;
+  border-style: solid;
+  border-color: rgb(34, 33, 33);
+  
+}
+
+#right {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  background-color: #cb3234;
+  width: 50%;
+  height: 27em;
+  border-width: 3px 3px 3px 5px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 20% 10% 20% 10%;
+  box-shadow: inset 0 0 3px 3px #0000004d;
+}
+
+#resource-screen {
+  display: flex;
+  justify-content: center;
+  background-color: #393d42;
+  width: 80%;
+  height: 56%;
+  border: 2px solid black;
+  border-radius: 5%;
+  margin: 2em 0 0 0;
+  box-shadow: inset 0 0 3px 3px #0000004d;
+}
+
+h3 {
+  margin: 0;
+}
+
+#pokeType {
+  position: absolute;
+  align-self: flex-start;
+  margin: 1em auto;
+  font-family: 'Press Start 2P', cursive;
+  font-size: small;
+}
+
+#typePokemon {
+  position: absolute;
+  margin: 3.5em 0;
+  font-family: 'Press Start 2P', cursive;
+  color: white;
+  font-size: x-small;
+}
+
+#pokeStats {
+  position: absolute;
+  margin: 4.5em 0;
+  font-family: 'Press Start 2P', cursive;
+  font-size: small;
+}
+
+#statistics {
+  text-align: center;
+  position: absolute;
+  font-family: 'Press Start 2P', cursive;
+  color: white;
+  font-size: x-small;
+  margin-top: 8em;
+  line-height: 1.5em;
+} 
+
+#abil {
+  position: absolute;
+  align-self: flex-end;
+  margin-bottom: 3em;
+  font-family: 'Press Start 2P', cursive;
+  font-size: small;
+}
+
+#abilities {
+  align-self: flex-end;
+  text-align: center;
+  position: relative;
+  font-family: 'Press Start 2P', cursive;
+  color: white;
+  font-size: x-small;
+  margin-bottom: 1em;
+  line-height: 1.5em;
+}
+
+#pokename {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  align-self: flex-end;
+  background-color: #369CD4;
+  width: 70%;
+  height: 13%;
+  border: 2px solid black;
+  border-radius: 5%;
+  margin-bottom: 5em;
+  box-shadow: inset 0 0 3px 3px #0000004d;
+}
+
+#nmbre {
+  width: 100%;
+  text-align: center;
+  background: none;
+  border: none;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1em;
+}
+
+#request-btn {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  align-self: flex-end;
+  background-color: #f0f8ff;
+  width: 35%;
+  height: 10%;
+  margin: 0 6em 1.5em 0;
+  border: 2px solid black;
+  border-radius: 5px;
+  box-shadow: inset 0 0 3px 3px #0000004d;
+}
+
+#button {
+  width: 100%;
+  text-align: center;
+  background: none;
+  border: none;
+  font-family: 'Press Start 2P', cursive;
+  font-size: x-small;
+}
+
+#yligth {
+  position: absolute;
+  align-self: flex-end;
+  background: radial-gradient(farthest-corner at 10px 15px, white, #fbff00, #fbff00);
+  width: 14%;
+  height: 10%;
+  margin: 0 0 1.7em 8em;
+  border-radius: 50%;
+  border: 2px solid black;
+  box-shadow: inset 0 0 8px 8px #0000004d;
+}

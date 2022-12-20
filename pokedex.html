@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokédex LaunchX</title>
+  <link rel="stylesheet" href="./pokedex.css">
+  <style> @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap'); </style>
+</head>
+<body>
+  <h1 id="titulo">Pokedex LaunchX</h1>
+  <section id="pokedex">
+    <div id="left">
+      <div id="big-light"></div>
+      <div id="small-lights">
+        <div id="red-light"></div>
+        <div id="yellow-light"></div>
+        <div id="green-light"></div>
+      </div>
+      <div id="poke-screen">
+        <div class="ps-topdots"></div>
+        <div class="ps-topdots"></div>
+        <div id="ps-reddot"></div>
+        <div id="ps-lines"></div>
+        <div id="ps-black">
+          <div id="namPok"></div>
+          <img src="./recursos/pokeball.png" alt="Pokemon" id="pokeImg">
+          <div id="numPok"></div>
+        </div>
+      </div>
+      <div id="left-buttons">
+        <div id="vertical"></div>
+        <div id="horizontal"></div>
+      </div>
+      <div id="speaker">
+        <div class="speaklines" id="s1"></div>
+        <div class="speaklines" id="s2"></div>
+        <div class="speaklines" id="s3"></div>
+        <div class="speaklines" id="s4"></div>
+        <div class="speaklines" id="s5"></div>
+        <div class="speaklines" id="s6"></div>
+        <div class="speaklines" id="s7"></div>
+      </div>
+    </div>
+    <div id="center">
+      <div id="cent"></div>
+    </div>
+    <div id="right">
+      <div id="resource-screen">
+        <div id="pokeType"><h3>Pokémon Type</h3></div>
+        <div id="typePokemon"></div>
+        <div id="pokeStats"><h3>Statistics</h3></div>
+        <div id="statistics"></div>
+        <div id="abil"><h3>Abilities</h3></div>
+        <div id="abilities"></div>
+      </div>
+      <div id="pokename">
+        <input type="text" placeholder="Pokémon" id="nmbre" name="nmbre">
+      </div>
+      <div id="request-btn">
+        <button onclick="fetchPokemon()" id="button" onmousedown="mDown(this)" onmouseup="mUp(this)">Buscar</button>
+      </div>
+      <div id="yligth"></div>
+    </div>
+  </section>
+</body>
+<footer>
+  <script src="./pokedex.js"></script>
+</footer>
+</html>
