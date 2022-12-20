@@ -1,4 +1,4 @@
-// alert('Aún no es responsive. De momento sólo disponible versión Desktop.');
+alert('Aún no es responsive. De momento sólo disponible versión Desktop.');
 
 function mDown(obj) {
   obj.style.backgroundColor = "#015d52";
